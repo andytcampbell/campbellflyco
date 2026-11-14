@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop | Campbell Fly Company</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      color: #121212;
+      background: #fff;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 50px;
+    }
+    header {
+      padding: 16px 0 80px;
+    }
+    header img {
+      width: 90px;
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px 8px;
+    }
+    .item img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+    .name {
+      font-size: 15px;
+      letter-spacing: 0.6px;
+      margin: 13px 0 4px;
+    }
+    .price {
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    footer {
+      padding: 100px 0 30px;
+      font-size: 13px;
+      letter-spacing: 0.6px;
+      color: #555;
+    }
+    footer a {
+      color: #121212;
+    }
+    @media (max-width: 750px) {
+      .wrap { padding: 0 15px; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      header { padding-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="/"><img src="images/logo.svg" alt="Campbell Fly Company" /></a>
+    </header>
+
+    <main class="grid">
+      <div class="item">
+        <img src="images/box.webp" alt="Campbell Fly Co. Fly Box" />
+        <p class="name">Campbell Fly Co. Fly Box</p>
+        <p class="price">$20.00</p>
+      </div>
+      <div class="item">
+        <img src="images/hat.webp" alt="Campbell Fly Co. Surf Cap" />
+        <p class="name">Campbell Fly Co. Surf Cap</p>
+        <p class="price">$35.00</p>
+      </div>
+      <div class="item">
+        <img src="images/tee.webp" alt="Campbell Fly Co. Tee" />
+        <p class="name">Campbell Fly Co. Tee</p>
+        <p class="price">$35.00</p>
+      </div>
+      <div class="item">
+        <img src="images/bottle.webp" alt="Campbell Fly Co. YETI 18 oz Water Bottle" />
+        <p class="name">Campbell Fly Co. YETI 18 oz Water Bottle</p>
+        <p class="price">$45.00</p>
+      </div>
+      <div class="item">
+        <img src="images/tumbler.webp" alt="Campbell Fly Co. YETI 20 oz Tumbler" />
+        <p class="name">Campbell Fly Co. YETI 20 oz Tumbler</p>
+        <p class="price">$45.00</p>
+      </div>
+    </main>
+
+    <footer>
+      To order, email <a href="mailto:andy@campbellfly.co">andy@campbellfly.co</a> with the item, size, and quantity.
+    </footer>
+  </div>
+</body>
+</html>
